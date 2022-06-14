@@ -2,7 +2,9 @@ import _ from "lodash"
 
 import "./style.css"
 import Icon from "./icon.png"
+
 import pets from "./pets.xml"
+import games from "./games.csv"
 
 function component() {
     const myIcon = new Image()
@@ -15,6 +17,7 @@ function component() {
     element.appendChild(myIcon)
 
     console.log(pets)
+    console.log(games)
 
     return element
 }

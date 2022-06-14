@@ -14,6 +14,9 @@ module.exports = {
             test: /\.xml$/i,
             use: ["xml-loader"],
         }, {
+            test: /\.csv$/i,
+            use: ["csv-loader"],
+        }, {
             test: /(png|svg|jpg|jpeg|gif)$/i,
             type: "asset/resource",
         }, {
