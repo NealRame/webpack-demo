@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+    <pet>
+        <name>Leo</name>
+        <type>Cat</type>
+        <breed>Chartreux</breed>
+        <age>7</age>
+    </pet>
+    <pet>
+        <name>Hawaï</name>
+        <type>Dog</type>
+        <breed>Boxer</breed>
+        <age>4</age>
+    </pet>
+    <pet>
+        <name>Ace</name>
+        <breed>American Bulldog</breed>
+        <type>Dog</type>
+        <age>5</age>
+    </pet>
+</pets>

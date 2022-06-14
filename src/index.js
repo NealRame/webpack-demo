@@ -2,6 +2,7 @@ import _ from "lodash"
 
 import "./style.css"
 import Icon from "./icon.png"
+import pets from "./pets.xml"
 
 function component() {
     const myIcon = new Image()
@@ -12,6 +13,8 @@ function component() {
     element.innerHTML = _.join(['Hello', 'webpack'], ' ')
     element.classList.add('hello')
     element.appendChild(myIcon)
+
+    console.log(pets)
 
     return element
 }
