@@ -3,8 +3,9 @@ import _ from "lodash"
 import "./style.css"
 import Icon from "./icon.png"
 
-import pets from "./pets.xml"
+import books from "./books.json"
 import games from "./games.csv"
+import pets from "./pets.xml"
 
 function component() {
     const myIcon = new Image()
@@ -16,8 +17,9 @@ function component() {
     element.classList.add('hello')
     element.appendChild(myIcon)
 
-    console.log(pets)
+    console.log(books)
     console.log(games)
+    console.log(pets)
 
     return element
 }
