@@ -7,11 +7,15 @@ module.exports = {
     devServer: {
         static: "./dist",
     },
-    entry: {
-        index: "./src/index.js",
-    },
+    entry: "./src/index.js",
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: "Caching",
+        }),
+    ],
     output: {
-        filename: "[name].bundle.js",
+        clean: true,
+        filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist"),
     },
 }
