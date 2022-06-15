@@ -1,5 +1,6 @@
 const path = require("path")
 const toml = require("toml")
+const yaml = require("yamljs")
 
 
 module.exports = {
@@ -23,6 +24,12 @@ module.exports = {
             type: "json",
             parser: {
                 parse: toml.parse
+            },
+        }, {
+            test: /\.(yml|yaml)$/i,
+            type: "json",
+            parser: {
+                parse: yaml.parse
             },
         }, {
             test: /(png|svg|jpg|jpeg|gif)$/i,
