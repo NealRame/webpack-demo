@@ -1,0 +1,25 @@
+title = "Music collection"
+
+[[bands]]
+    name = "Pertubator"
+    [[bands.albums]]
+    title = "Dangerous Day"
+    year = 2014
+    [[bands.albums]]
+    title = "The Uncanny Valley"
+    year = 2016
+
+[[bands]]
+    name = "Alt 236"
+    [[bands.albums]]
+    title = "Leviathan"
+    year = 2018
+
+[[bands]]
+    name = "Gunship"
+    [[bands.albums]]
+    title = "Gunship"
+    year = 2015
+    [[bands.albums]]
+    title = "Dark All Day"
+    year = 2018

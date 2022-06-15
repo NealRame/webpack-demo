@@ -5,6 +5,7 @@ import Icon from "./icon.png"
 
 import books from "./books.json"
 import games from "./games.csv"
+import music from "./music.toml"
 import pets from "./pets.xml"
 
 function component() {
@@ -19,6 +20,7 @@ function component() {
 
     console.log(books)
     console.log(games)
+    console.log(music)
     console.log(pets)
 
     return element

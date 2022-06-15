@@ -1,4 +1,6 @@
 const path = require("path")
+const toml = require("toml")
+
 
 module.exports = {
     entry: "./src/index.js",
@@ -16,6 +18,12 @@ module.exports = {
         }, {
             test: /\.csv$/i,
             use: ["csv-loader"],
+        }, {
+            test: /\.toml$/i,
+            type: "json",
+            parser: {
+                parse: toml.parse
+            },
         }, {
             test: /(png|svg|jpg|jpeg|gif)$/i,
             type: "asset/resource",
