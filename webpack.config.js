@@ -1,7 +1,7 @@
 const path = require("path")
 
-module.exports = {
-    mode: "development",
+module.exports = env => ({
+    mode: (env.production ?? false) ? "production" : "development",
     entry: "./src/index.js",
     externals: {
         lodash: {
@@ -20,4 +20,4 @@ module.exports = {
         },
         path: path.resolve(__dirname, "dist"),
     },
-}
+})
